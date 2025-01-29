@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 .button-css{
-    @apply bg-blue-950 text-white p-2 rounded-md cursor-pointer border-1 border-blue-950 hover:bg-white hover:text-blue-950 transition duration-500
+    @apply bg-blue-950 text-white p-2 rounded-md cursor-pointer border-2 border-blue-950 hover:bg-white hover:text-blue-950 transition duration-500
 }

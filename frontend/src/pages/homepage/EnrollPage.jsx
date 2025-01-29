@@ -1,12 +1,16 @@
 import React from 'react'
 import { RiAdminFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 
 const EnrollPage = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen flex">
 
-      <div className="max-w-[1200px] w-full mx-auto grid md:grid-cols-2">
+      <div className="w-full mx-auto grid md:grid-cols-2">
 
         <div className="w-full bg-blue-950 text-white flex flex-col items-center justify-center text-center p-8">
           <img src="/gov.png" alt="" className='w-[150px] md:w-[200px]'/>
@@ -19,8 +23,8 @@ const EnrollPage = () => {
           <h1 className='text-3xl text-center'>NID Pre-Enrollment System</h1>
 
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4 w-full mt-5'>
-          <button className='button-css text-xl flex items-center justify-center gap-4'><FaUser />Login For Individuals</button>
-          <button className='button-css text-xl flex items-center justify-center gap-4'><RiAdminFill />Login For Admins</button>
+          <button onClick={()=> navigate("/enroll/login")} className='button-css text-xl flex items-center justify-center gap-4'><FaUser />Login For Individuals</button>
+          <button onClick={()=> navigate("/enroll/admin")} className='button-css text-xl flex items-center justify-center gap-4'><RiAdminFill />Login For Admins</button>
           
           </div>
 
