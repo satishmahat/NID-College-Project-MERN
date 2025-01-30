@@ -15,11 +15,14 @@ const IndividualLogin = () => {
     const numberPattern = /^(98|97)\d{8}$/;
 
     if (!numberPattern.test(loginNumber)) {
-      setError("Enter a valid 10-digit number starting with 98 or 97.");
+      setError("Enter a valid phone number.");
       return;
     }
 
     setError("");
+    const expirationTime = new Date().getTime() + 60 * 60 * 1000; // 1 hour in milliseconds
+    localStorage.setItem("isAuthenticated", "true");
+    localStorage.setItem("authExpiration", expirationTime.toString()); // Set expiration time  
     navigate("/enroll/user-form"); 
 
   }

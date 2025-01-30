@@ -2,9 +2,15 @@ import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import LandingPage from '../pages/homepage/LandingPage'
 import EnrollPage from '../pages/homepage/EnrollPage'
-import IndividualLogin from '../components/IndividualLogin'
-import AdminLogin from '../components/AdminLogin'
+import IndividualLogin from '../pages/userpage/IndividualLogin'
+import AdminLogin from '../pages/adminpage/AdminLogin'
 import UserFormLayout from '../pages/userpage/UserFormLayout'
+import PrivateUserRoute from './PrivateUserRoute'
+import ApplicatationData from '../pages/userpage/ApplicatationData'
+import ContactDetail from '../pages/userpage/ContactDetail'
+import FamilyDetail from '../pages/userpage/FamilyDetail'
+import Appointment from '../pages/userpage/Appointment'
+import Preview from '../pages/userpage/Preview'
 
 const router = createBrowserRouter([
 
@@ -26,27 +32,27 @@ const router = createBrowserRouter([
     },
     {
         path: "/enroll/user-form",
-        element: <UserFormLayout/>,
+        element: <PrivateUserRoute><UserFormLayout/></PrivateUserRoute>,
         children: [
             {
                 path: '',
-                element: <div>Application Data</div>
+                element: <ApplicatationData/>
             },
             {
                 path: 'contact-detail',
-                element: <div>Contact Detail</div>
+                element: <ContactDetail/>
             },
             {
                 path: 'family-detail',
-                element: <div>Family Detail</div>
+                element: <FamilyDetail/>
             },
             {
                 path: 'appointment',
-                element: <div>Appointment</div>
+                element: <Appointment/>
             },
             {
                 path: 'preview',
-                element: <div>Preview</div>
+                element: <Preview/>
             }
         ]
     }
