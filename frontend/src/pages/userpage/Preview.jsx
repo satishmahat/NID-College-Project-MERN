@@ -1,5 +1,6 @@
 import React from 'react'
 import { useFormContext } from "react-hook-form";
+import { Link } from 'react-router-dom';
 
 const Preview = () => {
     const { watch } = useFormContext();
@@ -26,7 +27,8 @@ const Preview = () => {
         <br />
 
 
-        <div className='mt-4 text-right'>
+        <div className='flex justify-between mt-4'>
+        <Link to={"/enroll/user-form/appointment"} className='button-css'>Previous</Link>        
         <button type="submit" className='button-css'>Submit</button> 
         </div>
         

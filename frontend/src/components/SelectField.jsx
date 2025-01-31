@@ -4,7 +4,7 @@ const SelectField = ({ label, name, options, validationRules, errors, register }
   return (
     <div>
 
-      <label>{label}</label>
+      <label>{label}</label><br />
 
       <select 
         {...register(name, validationRules)} 

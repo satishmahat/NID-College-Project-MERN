@@ -7,9 +7,17 @@ import SelectField from '../../components/SelectField';
 
 
 const ApplicationData = () => {
-    const { register, formState: { errors } } = useFormContext();
+    const { register, trigger, formState: { errors } } = useFormContext();
     const navigate = useNavigate();
   
+    const handleNext = async () => {
+        const isValid = await trigger(); // Validate all fields in the current step
+        if (isValid) {
+            navigate("/enroll/user-form/contact-detail"); // Only navigate if valid
+        }
+    };
+
+
     return (
     <div>
     <h2>Step 1: Personal Information</h2>
@@ -47,8 +55,8 @@ const ApplicationData = () => {
         </fieldset>
         </div>
         
-        <div className='mt-4 text-right'>
-            <Link to={"/enroll/user-form/contact-detail"} className='button-css'>Next</Link>
+        <div className='flex justify-end mt-4'>
+            <Link onClick={handleNext} className='button-css'>Next</Link>
         </div>
         
       </div>

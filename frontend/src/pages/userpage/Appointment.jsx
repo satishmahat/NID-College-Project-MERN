@@ -5,8 +5,15 @@ import SelectField from '../../components/SelectField';
 import InputField from '../../components/InputField';
 
 const Appointment = () => {
-    const { register, formState: { errors } } = useFormContext();
+    const { register, trigger, formState: { errors } } = useFormContext();
     const navigate = useNavigate();
+
+    const handleNext = async () => {
+      const isValid = await trigger(); // Validate all fields in the current step
+      if (isValid) {
+          navigate("/enroll/user-form/preview"); // Only navigate if valid
+      }
+  };
   
     return (
       <div>
@@ -36,9 +43,11 @@ const Appointment = () => {
         </fieldset>
         </div>
         
+        
 
-        <div className='mt-4 text-right'>
-          <Link to={"/enroll/user-form/preview"} className='button-css'>Next</Link>        
+        <div className='flex justify-between mt-4'>
+          <Link to={"/enroll/user-form/family-detail"} className='button-css'>Previous</Link>        
+          <Link onClick={handleNext} className='button-css'>Next</Link>        
         </div>
 
       </div>
