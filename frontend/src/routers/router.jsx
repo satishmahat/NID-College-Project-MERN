@@ -6,7 +6,7 @@ import IndividualLogin from '../pages/userpage/IndividualLogin'
 import AdminLogin from '../pages/adminpage/AdminLogin'
 import UserFormLayout from '../pages/userpage/UserFormLayout'
 import PrivateUserRoute from './PrivateUserRoute'
-import ApplicatationData from '../pages/userpage/ApplicatationData'
+import ApplicationData from '../pages/userpage/ApplicationData'
 import ContactDetail from '../pages/userpage/ContactDetail'
 import FamilyDetail from '../pages/userpage/FamilyDetail'
 import Appointment from '../pages/userpage/Appointment'
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '',
-                element: <ApplicatationData/>
+                element: <ApplicationData/>
             },
             {
                 path: 'contact-detail',

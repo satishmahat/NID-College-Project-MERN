@@ -8,14 +8,27 @@ const Preview = () => {
     return (
       <div>
         <h2>Preview Your Data</h2>
-        <p>Name: {formData.a_name}</p>
-        <p>Number: {formData.c_phone}</p>
-        <p>Family name: {formData.f_name}</p>
-        <p>Appointment: {formData.a_date}</p>
-        
+        <p>First Name: {formData.app_fname}</p>
+        <p>Middle Name: {formData.app_mname}</p>
+        <p>Last Name: {formData.app_lname}</p>
+        <br />
+
+        <p>Contact</p><br />
+        <p>Mobile Number: {formData.cont_mobile}</p>
+        <br />
+
+        <p>Father</p><br />
+        <p>First Name: {formData.fat_fname}</p>
+        <br />
+
+        <p>Appointment</p>
+        <p>Appointment Place: {formData.biometric_place}</p>
+        <br />
 
 
-        <button type="submit">Submit</button>
+        <div className='mt-4 text-right'>
+        <button type="submit" className='button-css'>Submit</button> 
+        </div>
         
       </div>
     )

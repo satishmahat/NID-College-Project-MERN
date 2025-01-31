@@ -18,7 +18,7 @@ const UserFormLayout = () => {
       <h1>Navbar</h1>
     </header>
     
-    <div>
+    <div className='px-6 sm:px-16'>
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
         <Outlet /> 
