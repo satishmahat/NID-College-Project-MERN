@@ -19,7 +19,7 @@ const Appointment = () => {
       <div>
         <h2>Step 4: Appointment</h2>
 
-        <div>
+        <div className='mx-6 sm:mx-12 md:mx-22 mt-6'>
         <fieldset className='border border-blue-800 p-4 rounded-md'>
             <legend className='text-lg text-blue-800'> Appointment Details </legend>
             

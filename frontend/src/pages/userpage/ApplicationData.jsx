@@ -20,11 +20,14 @@ const ApplicationData = () => {
 
     return (
     <div>
+    
+
+
     <h2>Step 1: Personal Information</h2>
         
         
-        <div>
-        <fieldset className='border border-blue-800 p-4 rounded-md'>
+        <div className='mx-6 sm:mx-12 md:mx-22 mt-6'>
+        <fieldset className='border border-blue-800 py-4 px-6 sm:px-8 md:px-10 rounded-md'>
             <legend className='text-lg text-blue-800'> Main Applicant Detail </legend>
             
             <div className='grid sm:grid-cols-2 gap-x-6 gap-y-2'>

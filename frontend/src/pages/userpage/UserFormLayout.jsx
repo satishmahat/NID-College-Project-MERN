@@ -2,6 +2,7 @@ import React from 'react'
 
 import { useForm, FormProvider } from "react-hook-form";
 import { Outlet, useNavigate } from "react-router-dom";
+import EnrollNavbar from '../../components/EnrollNavbar';
 
 const UserFormLayout = () => {
 
@@ -13,15 +14,15 @@ const UserFormLayout = () => {
   };
 
   return (
-    <div>
+    <div className='bg-gray-300 h-screen'>
     <header>
-      <h1>Navbar</h1>
+      <EnrollNavbar/>
     </header>
     
-    <div className='px-6 sm:px-16'>
+    <div className='mx-6 sm:mx-16 mt-6 bg-white'>
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-        <Outlet /> 
+        <Outlet/> 
       </form>
     </FormProvider>
     </div>
