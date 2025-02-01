@@ -14,12 +14,12 @@ const UserFormLayout = () => {
   };
 
   return (
-    <div className='bg-gray-300 h-screen'>
+    <div className='bg-gray-300 h-full pb-6'>
     <header>
       <EnrollNavbar/>
     </header>
     
-    <div className='mx-6 sm:mx-16 mt-6 bg-white'>
+    <div className='mx-6 sm:mx-16 mt-6 bg-white pb-8 '>
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
         <Outlet/> 
