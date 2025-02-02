@@ -4,6 +4,7 @@ import { useNavigate , Link} from "react-router-dom";
 import InputField from '../../components/InputField.jsx';
 import SelectField from '../../components/SelectField';
 import DateField from '../../components/DateField';
+import EnrollProgressBar from '../../components/EnrollProgressBar.jsx';
 
 
 
@@ -20,7 +21,7 @@ const ContactDetail = () => {
 
     return (
       <div>
-        <h2>Step 2: Contact Details</h2>
+        <EnrollProgressBar progress={2}/>
         
         <div className='mx-6 sm:mx-12 md:mx-22 mt-6'>
 
@@ -31,7 +32,7 @@ const ContactDetail = () => {
             <div className='grid sm:grid-cols-2 gap-x-6 gap-y-3'>
 
                 <InputField
-                    label="Mobile Number" 
+                    label="Mobile Number *" 
                     name="per_mobile" 
                     type="tel" 
                     register={register} 

@@ -1,6 +1,8 @@
 import React from 'react'
 import { useFormContext } from "react-hook-form";
 import { Link } from 'react-router-dom';
+import EnrollProgressBar from '../../components/EnrollProgressBar.jsx';
+
 
 const Preview = () => {
     const { watch } = useFormContext();
@@ -9,7 +11,7 @@ const Preview = () => {
     return (
       <div>
 
-        <h2>Step 5: Preview</h2>
+        <EnrollProgressBar progress={5}/>
 
         <div className='mx-6 sm:mx-12 md:mx-22 mt-6'>
           
@@ -115,7 +117,7 @@ const Preview = () => {
             
 
             {/* Spouse's Details (Only if married) */}
-            {formData.app_maritalstatus === "Married" && (
+            {formData.add_maritalstatus === "Married" && (
               <>
                 <fieldset className='border border-blue-800 py-6 px-6 sm:px-8 md:px-10 rounded-md mt-6'>
                 <legend className='text-lg text-blue-800'> Spouse's Details </legend>

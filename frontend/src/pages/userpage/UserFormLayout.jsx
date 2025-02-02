@@ -14,7 +14,7 @@ const UserFormLayout = () => {
   };
 
   return (
-    <div className='bg-gray-300 h-full pb-6'>
+    <div className='bg-gray-300 h-full min-h-screen pb-6'>
     <header>
       <EnrollNavbar/>
     </header>

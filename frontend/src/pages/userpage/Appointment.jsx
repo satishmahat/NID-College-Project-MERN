@@ -4,6 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import SelectField from '../../components/SelectField';
 import InputField from '../../components/InputField';
 import DateField from '../../components/DateField';
+import EnrollProgressBar from '../../components/EnrollProgressBar.jsx';
 
 
 const Appointment = () => {
@@ -24,7 +25,7 @@ const Appointment = () => {
   
     return (
       <div>
-        <h2>Step 4: Appointment</h2>
+        <EnrollProgressBar progress={4}/>
 
         <div className='mx-6 sm:mx-12 md:mx-22 mt-6'>
         <fieldset className='border border-blue-800 py-6 px-6 sm:px-8 md:px-10 rounded-md'>

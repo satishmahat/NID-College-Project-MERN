@@ -4,6 +4,7 @@ import { useNavigate , Link} from "react-router-dom";
 import InputField from '../../components/InputField';
 import SelectField from '../../components/SelectField';
 import DateField from '../../components/DateField';
+import EnrollProgressBar from '../../components/EnrollProgressBar';
 
 
 const FamilyDetail = () => {
@@ -19,7 +20,7 @@ const FamilyDetail = () => {
   
     return (
       <div>
-        <h2>Step 3: Family Details</h2>
+        <EnrollProgressBar progress={3}/>
         
         <div className='mx-6 sm:mx-12 md:mx-22 mt-6'>
 
