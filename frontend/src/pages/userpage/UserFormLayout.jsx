@@ -3,14 +3,25 @@ import React from 'react'
 import { useForm, FormProvider } from "react-hook-form";
 import { Outlet, useNavigate } from "react-router-dom";
 import EnrollNavbar from '../../components/EnrollNavbar';
+import axios from "axios";
 
 const UserFormLayout = () => {
 
   const methods = useForm(); // Initialize react-hook-form
   const navigate = useNavigate();
 
-  const onSubmit = (data) => {
-    console.log(data); // Collect all form data
+  const onSubmit = async (data) => {
+    console.log(data)
+    axios
+      .post(`http://localhost:5000/forms/create-entry`,data)
+      .then((response)=>{
+        navigate('/');
+        alert("Form Submitted")
+      })
+      .catch((error)=>{
+        console.log(error)
+        alert("An error occured. Please check console")
+      })
   };
 
   return (

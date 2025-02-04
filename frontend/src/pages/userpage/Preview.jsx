@@ -33,7 +33,7 @@ const Preview = () => {
                 <p>Last Name: <span>{formData.app_lname}</span></p>
                 <p>Date of Birth: <span>{formData.app_dob}</span></p>
                 <p>Place of Birth: <span>{formData.app_placeofbirth}</span></p>
-                <p>Citizenship Type: <span>{formData.app_citizentype}</span></p>
+                <p>Citizenship Type: <span>{formData.app_citizenshiptype}</span></p>
                 <p>Citizenship Number: <span>{formData.app_citizenshipno}</span></p>
                 <p>Place of Issue of Citizenship: <span>{formData.app_placeofissue}</span></p>
                 <p>Issue Date: <span>{formData.app_dateofissue}</span></p>

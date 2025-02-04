@@ -1,4 +1,5 @@
-const mongoose = require('mongoose')
+import mongoose from 'mongoose';
+
 
 const formSchema = new mongoose.Schema({
     app_fname: { type: String, required: true },
@@ -6,7 +7,7 @@ const formSchema = new mongoose.Schema({
     app_lname: { type: String, required: true },
     app_dob: { type: Date, required: true },
     app_placeofbirth: { type: String, required: true },
-    app_citizentype: { type: String, required: true },
+    app_citizenshiptype: { type: String, required: true },
     app_citizenshipno: { type: String, required: true },
     app_placeofissue: { type: String, required: true },
     app_dateofissue: { type: Date, required: true },

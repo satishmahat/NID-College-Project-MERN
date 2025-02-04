@@ -11,6 +11,7 @@ import ContactDetail from '../pages/userpage/ContactDetail'
 import FamilyDetail from '../pages/userpage/FamilyDetail'
 import Appointment from '../pages/userpage/Appointment'
 import Preview from '../pages/userpage/Preview'
+import AdminLayout from '../pages/adminpage/AdminLayout'
 
 const router = createBrowserRouter([
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     {
         path: "/enroll/admin",
         element: <AdminLogin/>
+    },
+    {
+        path: "/admindashboard",
+        element: <AdminLayout/>
     },
     {
         path: "/enroll/user-form",
