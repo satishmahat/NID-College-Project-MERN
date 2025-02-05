@@ -50,7 +50,7 @@ const formSchema = new mongoose.Schema({
     biometric_date: { type: Date, required: true },
     status: {
       type: String,
-      enum: ['Pre-enrollment Done', 'Biometric Done', 'To be printed', 'Printed-visit the DAO'],
+      enum: ['Pre-enrollment Done', 'Biometric Done', 'Printed-visit the DAO'],
       default: 'Pre-enrollment Done',
     },
   }, 
