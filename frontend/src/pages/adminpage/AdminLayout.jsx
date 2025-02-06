@@ -38,7 +38,7 @@ const AdminLayout = () => {
       <table className="w-full border-collapse border border-gray-300">
         <thead>
           <tr className="bg-blue-800 text-white">
-            <th className="border p-2">ID</th>
+            <th className="border p-2">Reference Number</th>
             <th className="border p-2">Name</th>
             <th className="border p-2">Status</th>
             <th className="border p-2">Actions</th>
