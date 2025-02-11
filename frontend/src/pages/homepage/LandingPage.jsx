@@ -133,7 +133,7 @@ const LandingPage = () => {
 
     <div className="bg-gray-900 text-gray-300 p-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Registration Info */}
+          
         <div className="space-y-4">
           <p className="text-sm leading-relaxed">
             Birth registration is a natural right of children. Let us register within 35 days
@@ -150,7 +150,6 @@ const LandingPage = () => {
           </p>
         </div>
 
-        {/* Contact Sections */}
         <div className="space-y-6">
           <div className="bg-gray-800 p-4 rounded">
             <h3 className="text-red-500 font-medium mb-2">National ID Management Section</h3>
@@ -183,7 +182,6 @@ const LandingPage = () => {
           </div>
         </div>
 
-        {/* Support Section */}
         <div className="space-y-6">
           <div>
             <h3 className="font-medium mb-4">Technical Support</h3>
@@ -202,7 +200,6 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="mt-8 pt-4 border-t border-gray-800 text-center text-sm">
         © 2080, Department of National ID and Civil Registration
       </div>
