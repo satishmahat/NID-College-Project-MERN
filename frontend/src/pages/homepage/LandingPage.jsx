@@ -2,7 +2,7 @@ import React from 'react'
 import { FaFacebook, FaYoutube, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState, useEffect } from 'react';
 import { MdEmail } from "react-icons/md";
-import gov from "../../../public/gov.png"
+import gov from "/gov.png"
 import carousel from "../../assets/images/carousel.jpg"
 
 const LandingPage = () => {
@@ -60,8 +60,8 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <nav>
-          <div className="flex space-x-6">
+        <nav className="flex items-center min-h-[60px]">
+          <div className="flex flex-wrap items-center space-x-6">
             {[
               'HOME',
               'ABOUT US',
@@ -80,6 +80,13 @@ const LandingPage = () => {
                 {item}
               </a>
             ))}
+
+            <a
+              href="/enroll"
+              className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition duration-300"
+            >
+              National ID Online Application
+            </a>
           </div>
         </nav>
       </div>
